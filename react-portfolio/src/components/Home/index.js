@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom'
 import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters'
 // import LogoTitle from '../../assets/images/logo-s.png'
+import Portrait from '../../assets/images/Portrait.jpg'
+import Logo16th from '../../assets/images/16th.png'
 import Logo from './Logo'
 import './index.scss'
 
@@ -70,11 +72,15 @@ const Home = () => {
             CONTACT ME
           </Link>
         </div>
-        <Logo />
       </div>
-
+      {/* <Logo /> */}
+      <div className="portrait-container">
+        {/* <img src={Portrait} alt="Portrait" /> */}
+        <img src={Logo16th} alt="Logo-16th" />
+      </div>
       <Loader type="pacman" />
     </>
+
   )
 }
 

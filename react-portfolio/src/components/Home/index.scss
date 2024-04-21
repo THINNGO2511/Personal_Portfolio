@@ -80,7 +80,33 @@
   }
 }
 
+.portrait-container {
+  position: fixed;
+  background: #fff;
+  width: 30%; /* Adjust the width to 30% of the screen */
+  height: 100%; /* Take up the full height of the parent container */
+  top: 0;
+  right: -30%; /* Initially position the div outside the viewport */
+  animation: slideIn 3s forwards; /* Apply the slideIn animation */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+@keyframes slideIn {
+  from {
+    right: -30%; /* Starting position outside the viewport */
+  }
+  to {
+    right: 0; /* Ending position, fully visible */
+  }
+}
+
+.portrait-container img {
+  width: 50%; 
+  height: auto; 
+  display: block; 
+}
 
 @media screen and (max-width: 1200px) {
   .tags,
@@ -124,3 +150,4 @@
     margin: auto;
   }
 }
+

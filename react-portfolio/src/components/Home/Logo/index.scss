@@ -1,37 +1,18 @@
 .logo-container {
-  z-index: 0;
-  width: 400px;
+  // position: absolute;
+  position: relative;
+  size: 20%;
+  width: 300px;
   height: 609px;
-  opacity: 0;
+  transform: translateX(300%); /* Adjust for vertical centering */
+}
+
+
+.solid-logo {
   position: absolute;
-  top: 0;
-  right: 15%;
-  bottom: 0;
-  left: auto;
-  margin: auto;
-
-  svg {
-    width: 100%;
-    height: auto;
-    bottom: 0;
-    transform: rotateZ(30deg) !important;
-  }
-
-  .solid-logo {
-    position: absolute;
-    top: auto;
-    right: auto;
-    bottom: auto;
-    left: 0;
-    margin: auto;
-    width: 100%;
-    opacity: 0;
-    transform: rotateZ(30deg) !important;
-    z-index: 1;
-  }
+  top: 70%; /* Center vertically */
+  right: 10%; /* 20% from the right */
+  transform: translate(0, -50%); /* Adjust for vertical centering */
+  max-height: 100%; /* Ensure the image doesn't exceed the container's height */
 }
 
-.svg-container {
-  stroke: #ffd700;
-  stroke-width: 10;
-}
