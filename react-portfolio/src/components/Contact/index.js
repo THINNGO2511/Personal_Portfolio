@@ -20,7 +20,7 @@ const Contact = () => {
     e.preventDefault()
 
     emailjs
-      .sendForm('gmail', 'template_YeJhZkgb', form.current, 'your-token')
+      .sendForm('gmail', 'template_lbxkpzf', form.current, 'GBoQu9EmiNi95Oak_')
       .then(
         () => {
           alert('Message successfully sent!')
@@ -85,20 +85,20 @@ const Contact = () => {
           </div>
         </div>
         <div className="info-map">
-          Slobodan Gajić,
+          Houston, 77041
           <br />
-          Serbia,
+          Texas, USA
           <br />
-          Branka RadiČevića 19, 22000 <br />
-          Sremska Mitrovica <br />
+          {/* Branka RadiČevića 19, 22000 <br />
+          Sremska Mitrovica <br /> */}
           <br />
-          <span>freelancerslobodan@gmail.com</span>
+          <span>ngothinh2511@gmail.com</span>
         </div>
         <div className="map-wrap">
-          <MapContainer center={[44.96366, 19.61045]} zoom={13}>
+          <MapContainer center={[29.836931, -95.553047]} zoom={11}>
             <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-            <Marker position={[44.96366, 19.61045]}>
-              <Popup>Sloba lives here, come over for a cup of coffee :)</Popup>
+            <Marker position={[29.836931, -95.553047]}>
+              <Popup>I live here, come over for a cup of coffee :)</Popup>
             </Marker>
           </MapContainer>
         </div>

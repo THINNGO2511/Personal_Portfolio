@@ -1,13 +1,13 @@
 import './index.scss'
 import { useState } from 'react'
-import LogoS from '../../assets/images/logo-s.png'
-import LogoSubtitle from '../../assets/images/logo_sub.png'
+// import LogoS from '../../assets/images/logo-s.png'
+// import LogoSubtitle from '../../assets/images/logo_sub.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faLinkedin,
   faGithub,
-  faYoutube,
-  faSkype,
+  // faYoutube,
+  // faSkype,
 } from '@fortawesome/free-brands-svg-icons'
 import {
   faHome,
@@ -23,13 +23,13 @@ const Sidebar = () => {
 
   return (
     <div className="nav-bar">
-      <Link 
+      {/* <Link 
         className="logo"
         to="/"
         onClick={() => setShowNav(false)}>
         <img src={LogoS} alt="Logo" />
         <img className="sub-logo" src={LogoSubtitle} alt="slobodan" />
-      </Link>
+      </Link> */}
       <nav className={showNav ? 'mobile-show' : ''}>
         <NavLink 
           exact="true"
@@ -63,7 +63,7 @@ const Sidebar = () => {
       <ul>
         <li>
           <a
-            href="https://www.linkedin.com/in/slobodan-gaji%C4%87-006bb8b8/"
+            href="https://www.linkedin.com/in/ngothinh/"
             target="_blank"
             rel="noreferrer"
           >
@@ -76,7 +76,7 @@ const Sidebar = () => {
         </li>
         <li>
           <a
-            href="https://github.com/bobangajicsm"
+            href="https://github.com/THINNGO2511"
             target="_blank"
             rel="noreferrer"
           >
@@ -87,7 +87,7 @@ const Sidebar = () => {
             />
           </a>
         </li>
-        <li>
+        {/* <li>
           <a
             href="https://www.youtube.com/channel/UCBu5ulO4d-d47lAVybpRTkw"
             rel="noreferrer"
@@ -108,7 +108,7 @@ const Sidebar = () => {
               className="anchor-icon"
             />
           </a>
-        </li>
+        </li> */}
       </ul>
       <FontAwesomeIcon 
           onClick={() => setShowNav(true)}
