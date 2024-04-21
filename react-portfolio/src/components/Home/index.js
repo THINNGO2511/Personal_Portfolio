@@ -48,10 +48,6 @@ const Home = () => {
             <span className={`${letterClass} _13`}>I</span>
             <span className={`${letterClass} _14`}>'m</span>
             <span className={`${letterClass} _14`}> </span>
-            {/* <img
-              src={LogoTitle}
-              alt="CS @ University of Houston | SWE Intern @ NASA"
-            /> */}
             <AnimatedLetters
               letterClass={letterClass}
               strArray={nameArray}
@@ -65,14 +61,12 @@ const Home = () => {
             />
           </h1>
           <h2>CS @ University of Houston | SWE Intern @ NASA</h2>
-          <Link to="/contact" className="flat-button">
+          <Link to="/Personal_Portfolio/contact" className="flat-button">
             CONTACT ME
           </Link>
         </div>
       </div>
-      {/* <Logo /> */}
       <div className="portrait-container">
-        {/* <img src={Portrait} alt="Portrait" /> */}
         <img src={Logo16th} alt="Logo-16th" />
       </div>
       <Loader type="pacman" />
