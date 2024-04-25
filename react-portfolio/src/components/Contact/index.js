@@ -4,6 +4,8 @@ import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 import { useRef } from 'react'
 import emailjs from '@emailjs/browser'
 import AnimatedLetters from '../AnimatedLetters'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {faLinkedin} from '@fortawesome/free-brands-svg-icons'
 import './index.scss'
 
 const Contact = () => {
@@ -44,9 +46,19 @@ const Contact = () => {
             />
           </h1>
           <p>
-            I'm interested in internship and new grad opportunities - especially on ambitious
-            or large projects. However, if you have any other requests or
-            questions, don't hesitate to contact me at ngothinh2511@gmail.com or using below form.
+            I'm interested in internship and new grad opportunities - especially on advanced and ambitious projects. <br></br>
+            You can contact me at ngothinh2511@gmail.com, <a 
+              href="https://www.linkedin.com/in/ngothinh/" 
+              target="_blank" 
+              rel="noreferrer" >
+                <FontAwesomeIcon
+                icon={faLinkedin}
+                // color="#0762C8"
+                color="#fff"
+                style={{ fontSize: '18px'}}
+                className="anchor-icon"
+              />
+              </a> or using below form.
           </p>
           <div className="contact-form">
             <form ref={form} onSubmit={sendEmail}>
