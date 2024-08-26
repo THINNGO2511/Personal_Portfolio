@@ -7,6 +7,11 @@ My personal website to learn more about me :D
 
 Available at: https://thinngo2511.github.io/Personal_Portfolio
 
+## Techstack
+- Complex Animation (all JavaScript vanilla code)
+- React.js (JavaScript, HTML, SCSS)
+- Github Pages
+
 ## For anyone curious
 ### Installation
 
