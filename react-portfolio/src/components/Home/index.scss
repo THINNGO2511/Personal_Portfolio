@@ -93,6 +93,12 @@
   align-items: center;
 }
 
+
+.container.home-page {
+  position: relative;
+  z-index: 1;
+}
+
 @keyframes slideIn {
   from {
     right: -30%; /* Starting position outside the viewport */

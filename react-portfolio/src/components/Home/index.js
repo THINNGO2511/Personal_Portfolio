@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters'
+import NetworkAnimation from './NetworkAnimation'
 import Logo16th from '../../assets/images/16th.png'
 import './index.scss'
 
@@ -60,15 +61,19 @@ const Home = () => {
               idx={15}
             />
           </h1>
-          <h2>CS @ University of Houston | SWE Intern @ NASA</h2>
+          <h2>CS @ University of Houston | AI/ML Intern @ NASA</h2>
           <Link to="/Personal_Portfolio/contact" className="flat-button">
             CONTACT ME
           </Link>
         </div>
       </div>
-      <div className="portrait-container">
-        <img src={Logo16th} alt="Logo-16th" />
+      {/* <div className="portrait-container">
+         <img src={Logo16th} alt="Logo-16th" />
+      </div> */}
+      <div className="container home-page" style={{ position: 'relative', zIndex: 1 }}>
+        {/* ... existing content ... */}
       </div>
+      <NetworkAnimation />
       <Loader type="pacman" />
     </>
 
