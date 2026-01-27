@@ -61,7 +61,7 @@ const Home = () => {
               idx={15}
             />
           </h1>
-          <h2>CS @ University of Houston | AI/ML Intern @ NASA</h2>
+          <h2>SWE @ Meta | CS @ University of Houston</h2>
           <Link to="/Personal_Portfolio/contact" className="flat-button">
             CONTACT ME
           </Link>

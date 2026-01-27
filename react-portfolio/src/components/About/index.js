@@ -33,13 +33,13 @@ const About = () => {
             />
           </h1>
           <p>
-            I'm a Computer Science student at the University of Houston, seeking internship and new grad roles for 2025. 
+            I'm a recent Computer Science graduate from the University of Houston in Fall 2025.
           </p>
           <p>
-            Currently, I'm an AI/ML Intern at NASA Johnson Space Center, where I work on the On-Device LLM Team, developing a secure and efficient ChatGPT-like terminal for NASA engineers.
+            Currently, I'm a Software Engineer at Meta in Bay Area, where I work on the Location Inference team, developing ML systems to improve user location accuracy.
           </p>
           <p align="LEFT">
-            Outside of work, I enjoy working out, reading, exploring the stock market, and spending time with loved ones.
+            Outside of work, I enjoy working out, exploring the stock market, and recently getting into GPU kernels and robotics.
           </p>
         </div>
 
