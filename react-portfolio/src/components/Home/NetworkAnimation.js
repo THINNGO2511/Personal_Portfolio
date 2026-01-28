@@ -369,16 +369,17 @@ const NetworkAnimation = () => {
 
   // return <canvas ref={canvasRef} style={{ position: 'absolute', top: 0, left: 0 }} />;
   return (
-    <canvas 
-      ref={canvasRef} 
-      style={{ 
-        position: 'absolute', 
-        top: 0, 
-        right: 0, // Align to the right
-        width: '50%', // Take up half the width
+    <canvas
+      ref={canvasRef}
+      className="network-canvas"
+      style={{
+        position: 'absolute',
+        top: 0,
+        right: 0,
+        width: '50%',
         height: '100%',
-        zIndex: 0 // Ensure it's behind your content
-      }} 
+        zIndex: 0
+      }}
     />
   );
 };

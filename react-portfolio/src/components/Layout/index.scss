@@ -136,6 +136,19 @@
         padding: 20px;
         box-sizing: border-box;
       }
+
+      h1 {
+        font-size: 40px;
+
+        &:before,
+        &:after {
+          display: none;
+        }
+      }
+
+      p {
+        font-size: 12px;
+      }
     }
 
     &.portfolio-page {
@@ -160,5 +173,31 @@
     width: 100%;
     height: 0%;
     overflow: visible;
+  }
+
+  .tags {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    &.contact-page,
+    &.about-page,
+    &.portfolio-page {
+      .text-zone {
+        padding: 15px;
+      }
+
+      h1 {
+        font-size: 32px;
+        margin-bottom: 20px;
+        left: 0;
+      }
+
+      p {
+        font-size: 11px;
+      }
+    }
   }
 }

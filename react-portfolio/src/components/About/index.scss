@@ -79,3 +79,34 @@
     transform: rotateX(90deg);
   }
 }
+
+@media screen and (max-width: 1200px) {
+  .stage-cube-cont {
+    position: initial;
+    width: 100%;
+    height: 0%;
+    overflow: visible;
+  }
+
+  .cubespinner {
+    margin-left: calc(50% - 100px);
+    margin-top: 50px;
+  }
+
+  .about-page {
+    .text-zone {
+      text-align: left;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .stage-cube-cont {
+    transform: scale(0.7);
+    margin-top: 20px;
+  }
+
+  .cubespinner {
+    margin-left: calc(50% - 70px);
+  }
+}

@@ -125,15 +125,15 @@
     position: initial;
     width: 100%;
     transform: none;
-    padding: 10px;
+    padding: 20px;
     box-sizing: border-box;
+    text-align: left;
   }
 
   .home-page .flat-button {
     float: none;
-    display: block;
-    margin: 20px auto 0 auto;
-    width: 124px;
+    display: inline-block;
+    margin: 20px 0 0 0;
   }
 
   .logo-container {
@@ -154,6 +154,45 @@
     bottom: auto;
     left: 0;
     margin: auto;
+  }
+
+  .home-page h1 {
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  .home-page h2 {
+    font-size: 12px;
+    letter-spacing: 2px;
+  }
+
+  .network-canvas {
+    opacity: 0.3;
+  }
+
+  .portrait-container {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .home-page h1 {
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  .home-page h2 {
+    font-size: 10px;
+    letter-spacing: 1px;
+  }
+
+  .home-page .flat-button {
+    font-size: 11px;
+    padding: 8px 14px;
+  }
+
+  .home-page .text-zone {
+    padding: 15px;
   }
 }
 
